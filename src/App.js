@@ -1,7 +1,11 @@
-function App() {
+import React from 'react'
+import Restaurant from './Components/Basics/Restaurant';
+
+const App = () => {
   return (
-    <h1>This is app</h1>
-  );
+      <Restaurant />
+  )
 }
 
 export default App;
+
