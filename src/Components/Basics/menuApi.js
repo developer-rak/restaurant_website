@@ -4,7 +4,7 @@ const Menu = [
      image: "images/maggi.jpg",
      name: "maggi",
      category: "breakfast",
-     price: "12₹",
+     price: "100 PKR",
      description:
        "I love Maggi realy oo yues  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -14,7 +14,7 @@ const Menu = [
      image: "images/allupakoida.jpg",
      name: "allu pakoida",
      category: "evening",
-     price: "20₹",
+     price: "50 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -24,7 +24,7 @@ const Menu = [
      image: "images/corn.jpg",
      name: "corn",
      category: "breakfast",
-     price: "10₹",
+     price: "30 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -34,7 +34,7 @@ const Menu = [
      image: "../images/chola.jpg",
      name: "chola",
      category: "lunch",
-     price: "50₹",
+     price: "150 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -44,7 +44,7 @@ const Menu = [
      image: "../images/pizza.jpg",
      name: "pizza",
      category: "evening",
-     price: "80₹",
+     price: "300 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -54,7 +54,7 @@ const Menu = [
      image: "../images/nonvegthali.jpg",
      name: "Non-Veg Thali",
      category: "dinner",
-     price: "180₹",
+     price: "180 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -64,7 +64,7 @@ const Menu = [
      image: "../images/sweet.jpg",
      name: "Sweets",
      category: "dinner",
-     price: "60₹",
+     price: "60 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -74,7 +74,7 @@ const Menu = [
      image: "../images/rajmarice.jpg",
      name: "Rajma Rice",
      category: "lunch",
-     price: "60₹",
+     price: "60 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },
@@ -82,9 +82,19 @@ const Menu = [
    {
      id: 9,
      image: "../images/samosa.jpg",
-     name: "samaso",
+     name: "samosa",
      category: "evening",
-     price: "10₹",
+     price: "10 PKR",
+     description:
+       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+   },
+
+   {
+     id: 10,
+     image: "../images/samosa.jpg",
+     name: "dev-raks personal",
+     category: "evening",
+     price: "10 PKR",
      description:
        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
    },

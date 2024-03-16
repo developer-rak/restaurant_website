@@ -1,25 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Style.css';
 
+import Menu from './menuApi';
+import MenuCard from './MenuCard';
+import Navbar from './Navbar';
+
+const uniqueList = [
+   ...new Set(
+      Menu.map((curElem) => {
+         return curElem.category;
+      })
+   ),
+   "All",
+];
+
 const Restaurant = () => {
+   const [ menuData, setMenuData ] = useState(Menu);
+   const [ menuList, setMenuList ] = useState(uniqueList);
+
+   const filterItem = (category) => {
+      if(category === "All") {
+         setMenuData(Menu);
+         return;
+      }
+
+      const updatedList = Menu.filter((curElem) => {
+         return curElem.category === category;
+      });
+
+      setMenuData(updatedList);
+   };
+
   return (
     <>
-      <div className='card-container'>
-         <div className='card'>
-            <div className='card-body'>
-               <span className='card-number card-circle subtle'>1</span>
-               <span className='card-author subtle'>Breakfast</span>
-               <h2 className='card-title'>Maggi</h2>
-               <span className='card-description subtl'>
-                  I love Maggi, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum et eius totam excepturi nisi.
-               </span>
-               <div className='card-read'>Read</div>
-            </div>
-            <img src="" alt="image" className='card-media' />
-
-            <span className='card-tag subtle'>Order Now</span>
-         </div>
-      </div>
+      <Navbar filterItem={filterItem} menuList={menuList}/>
+      <MenuCard menuData={ menuData }/>
     </>
   )
 }
